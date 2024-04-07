@@ -1,5 +1,5 @@
 ---
-title: 同步测试
+title: pull同步测试
 date: 2024-04-07 14:24:18
 categories: 
 - hexo
