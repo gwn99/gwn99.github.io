@@ -1,12 +1,13 @@
 ---
 title: pull同步测试
+categories:
+  - hexo
+tags:
+  - hexo
+  - test
+  - 同步
+abbrlink: '80e17328'
 date: 2024-04-07 14:24:18
-categories: 
-- hexo
-tags: 
-- hexo
-- test
-- 同步
 ---
 
 

@@ -14,7 +14,12 @@ timezone: Asia/ShangHai
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://gwn99.github.io #https://example.com
-permalink: :year/:month/:title/
+# permalink: :year/:month/:day/:title/
+permalink: :title/:abbrlink  # lxb 是自定义的前缀 这里是为了生成的文章链接不会因为有中文而访问不到
+abbrlink:
+    alg: crc32   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex
+
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -43,18 +48,18 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
+syntax_highlighter: #highlight.js
 highlight:
-  line_number: false # true 
+  line_number: true #false
   auto_detect: false
   tab_replace: ''
-  wrap: false # true
+  wrap: true
   hljs: false
 prismjs:
-  preprocess: true
+  preprocespost_asset_folders: true
   line_number: true
   tab_replace: ''
 
@@ -109,4 +114,10 @@ deploy:
     github: git@github.com:gwn99/gwn99.github.io.git  #你的仓库地址
     #gitee: https://gitee.com/william-guo/william-guo.gitee.io.git #把博客推送至gitee
   branch: main
+
+
+# https://github.com/viko16/hexo-permalink-pinyin
+permalink_pinyin:
+  enable: true
+  separator: '' # default: '-'
 
